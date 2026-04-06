@@ -1,54 +1,43 @@
 body {
     margin: 0;
-    background: #f0f0f0;
-    font-family: Arial, sans-serif;
+    background: #eaeaea;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Arial;
 }
 
 /* Book container */
 .book {
-    width: 80%;
-    max-width: 900px;
+    width: 800px;
+    height: 500px;
     margin-top: 40px;
 }
 
-/* Each spread */
-.spread {
-    display: none;
-    justify-content: center;
-    gap: 10px;
-}
-
-/* Active page */
-.spread.active {
-    display: flex;
+/* Each page */
+.book div {
+    width: 400px;
+    height: 500px;
 }
 
 /* Images */
-.spread img {
-    width: 48%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Cover page full width */
-.single {
-    width: 100% !important;
+.book img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Buttons */
 .controls {
-    margin: 20px;
+    margin-top: 20px;
 }
 
 button {
     padding: 10px 20px;
     margin: 5px;
-    border: none;
     background: #333;
     color: white;
+    border: none;
     cursor: pointer;
     border-radius: 5px;
 }
