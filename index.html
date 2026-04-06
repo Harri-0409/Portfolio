@@ -1,46 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Flipbook Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio Book</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="book">
 
-  <!-- COVER -->
-  <div class="spread active">
-    <img src="images/page1.jpg" style="width: 100%;">
-</div>
+    <!-- COVER -->
+    <div class="spread active">
+        <img src="images/page1.jpg" class="single">
+    </div>
 
-  <!-- SPREAD 1 -->
-  <div class="spread">
-    <img src="images/page2.jpg" class="left">
-    <img src="images/page3.jpg" class="right">
-  </div>
+    <!-- PAGE 2 & 3 -->
+    <div class="spread">
+        <img src="images/page2.jpg">
+        <img src="images/page3.jpg">
+    </div>
 
-  <!-- SPREAD 2 -->
-  <div class="spread">
-    <img src="images/page4.jpg" class="left">
-    <img src="images/page5.jpg" class="right">
-  </div>
+    <!-- PAGE 4 & 5 -->
+    <div class="spread">
+        <img src="images/page4.jpg">
+        <img src="images/page5.jpg">
+    </div>
 
-  <!-- SPREAD 3 -->
-  <div class="spread">
-    <img src="images/page6.jpg" class="left">
-    <img src="images/page7.jpg" class="right">
-  </div>
+    <!-- PAGE 6 & 7 -->
+    <div class="spread">
+        <img src="images/page6.jpg">
+        <img src="images/page7.jpg">
+    </div>
 
 </div>
 
 <div class="controls">
-  <button onclick="prevPage()">⬅ Prev</button>
-  <button onclick="nextPage()">Next ➡</button>
+    <button onclick="prevPage()">← Prev</button>
+    <button onclick="nextPage()">Next →</button>
 </div>
 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
